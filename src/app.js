@@ -12,13 +12,13 @@ function GoodDeeds() {
     элементом из input.value */
     setDeeds([...deeds, input.value]);
 
-    input.value = "Напиши, что хорошего?";
+    input.value = "";
   }
 
   return (
     <>
       <h3>Мои хорошие поступки</h3>
-      <input type="text" placeholder="Поступок" />
+      <input type="text" placeholder="Напиши, что хорошего?" />
       <button onClick={handleAddTask}>Добавить!</button>
       <ol>
         {deeds.map((deed, i) => (
